@@ -1,0 +1,6 @@
+#!/bin/bash
+
+TMP=`date +%Y%m%d%H%M%S`
+
+echo -n ${TMP} | xclip -selection clipboard
+

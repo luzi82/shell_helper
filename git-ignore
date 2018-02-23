@@ -1,0 +1,5 @@
+#!/bin/bash
+
+git status -s | grep "^??" | sed "s:^?? :/:" >> .gitignore
+cat .gitignore | sort > .gitignore.sort
+mv .gitignore.sort .gitignore

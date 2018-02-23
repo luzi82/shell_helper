@@ -1,0 +1,11 @@
+#!/usr/bin/python
+
+import string
+import random
+import sys
+
+#charset = string.ascii_uppercase + string.ascii_lowercase + string.digits
+#charset = string.ascii_uppercase + string.ascii_lowercase
+charset = string.ascii_uppercase
+
+sys.stdout.write("".join(random.choice(charset)for x in xrange(8)))
